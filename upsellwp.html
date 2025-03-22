@@ -1,0 +1,174 @@
+<!-- wp:generateblocks/container {"uniqueId":"6663ff6b","textColor":"var(\u002d\u002dhof)","isDynamic":true,"blockVersion":4,"display":"flex","flexDirection":"column","alignItems":"center","sizing":{"maxWidth":"1125px"},"spacing":{"marginLeft":"auto","marginRight":"auto","paddingLeft":"1rem","paddingRight":"1rem","paddingBottomTablet":"2rem"}} -->
+<!-- wp:generateblocks/container {"uniqueId":"798c4d76","isDynamic":true,"blockVersion":4,"display":"flex","justifyContent":"center","spacing":{"marginTop":"2rem"}} -->
+<!-- wp:generateblocks/headline {"uniqueId":"705d2b0f","element":"h5","blockVersion":3,"display":"inline","justifyContent":"center","typography":{"textAlign":"center","fontSizeTablet":"16px"},"spacing":{"marginBottom":"0px","paddingTop":"5px","paddingBottom":"5px","paddingLeft":"10px","paddingRight":"10px"},"borders":{"borderTopLeftRadius":"10px","borderTopRightRadius":"10px","borderBottomLeftRadius":"10px","borderBottomRightRadius":"10px"},"backgroundColor":"var(\u002d\u002drausch)","textColor":"#000000"} -->
+<h5 class="gb-headline gb-headline-705d2b0f gb-headline-text">Click The Video To Turn On Sound</h5>
+<!-- /wp:generateblocks/headline -->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/container {"uniqueId":"aa31e0ee","isDynamic":true,"blockVersion":4,"display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","sizing":{"maxWidth":"1000px"},"spacing":{"marginTop":""}} -->
+<!-- wp:generateblocks/headline {"uniqueId":"d54f3ba6","blockVersion":3,"typography":{"textAlign":"center","fontSizeTablet":"28px"},"spacing":{"marginTop":"1rem","marginBottom":"0px"},"textColor":"#000000","highlightTextColor":"var(\u002d\u002dhighlight-header)"} -->
+<h2 class="gb-headline gb-headline-d54f3ba6 gb-headline-text"><strong>Join <mark class="gb-highlight">The AI Insider Community</mark>!</strong></h2>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"7a55fa32","element":"h5","blockVersion":3,"typography":{"textAlign":"center"},"textColor":"#000000"} -->
+<h5 class="gb-headline gb-headline-7a55fa32 gb-headline-text">Learn directly from experts, build your network, and stay ahead of the AI revolution<br>Watch This Short Video For An Inside Look At Our Exclusive Community</h5>
+<!-- /wp:generateblocks/headline -->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/container {"uniqueId":"ad3778e5","backgroundColor":"var(\u002d\u002dhof)","isDynamic":true,"blockVersion":4,"sizing":{"maxWidth":"800px","maxHeight":"","width":"100%","height":"100%","minWidth":"","minHeight":"","widthTablet":"100%","heightTablet":"100%"},"spacing":{"marginTop":"","marginBottom":"","marginLeftTablet":"2rem","marginRightTablet":"2rem","paddingTop":"","paddingLeft":"","paddingRight":"","paddingBottom":""},"borders":{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px"},"boxShadows":[{"state":"normal","target":"self","customSelector":"","inset":false,"color":"rgba(0,0,0,0.1)","xOffset":5,"yOffset":5,"blur":10,"spread":""}]} -->
+<!-- wp:generateblocks/container {"uniqueId":"83180886","backgroundColor":"var(\u002d\u002dhof)","isDynamic":true,"blockVersion":4,"sizing":{"maxWidth":"800px","maxHeight":"","width":"100%","height":"100%","minWidth":"","minHeight":"","widthTablet":"100%","heightTablet":"100%"},"spacing":{"marginTop":"1rem","marginBottom":"1rem","marginLeftTablet":"2rem","marginRightTablet":"2rem","paddingTop":".4rem","paddingLeft":".4rem","paddingRight":".4rem","paddingBottom":".4rem"},"borders":{"borderTopLeftRadius":"4px","borderTopRightRadius":"4px","borderBottomLeftRadius":"4px","borderBottomRightRadius":"4px"},"useBoxShadow":true,"boxShadows":[{"state":"normal","target":"self","customSelector":"","inset":false,"color":"rgba(0,0,0,0.1)","xOffset":5,"yOffset":5,"blur":10,"spread":""}]} -->
+<!-- wp:bplugins/custom-html {"uniqueId":"ch8231f0c4"} /-->
+<!-- /wp:generateblocks/container -->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101"><strong><em>DO THIS FIRST</em>:</strong> Please watch this video to discover how the AI Insider Community can transform your AI journey.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:bplugins/custom-html {"uniqueId":"ch10dd5fdd"} /-->
+
+<!-- wp:bplugins/custom-html {"uniqueId":"ch6695c4ca","HTML":"    \u003cscript src=\u0022https://player.vimeo.com/api/player.js\u0022\u003e\u003c/script\u003e\n\n    \u003cscript\u003e\n      setTimeout(function () {\n        $(\u0022#hidesection\u0022).fadeIn(\u0022slow\u0022);\n        $(\u0022#blankspace\u0022).hide();\n      }, 500); //996000 // \u003c!\u002d\u002d time in milliseconds\n    \u003c/script\u003e\n    \u003cscript\u003e\n      $(document).ready(function () {\n        var iframe = document.querySelector(\u0022#vi-banner-video\u0022);\n        videoPlayer = new Vimeo.Player(iframe);\n        videoPlayer.setVolume(0);\n        videoPlayer.play();\n        $(\u0022.video-play-overlay\u0022).click(function() {\n          console.log('new overlay click');\n        });\n        $(document).on(\u0022click\u0022, \u0022#video-play-overlay\u0022, function () {\n          console.log('Clicked overlay');\n          videoPlayer.setCurrentTime(0);\n          setTimeout(function () {\n            videoPlayer.setVolume(1);\n\n          }, 100);\n          $(this).hide()\n          $(\u0022#js-video-control\u0022).hide();\n          $(\u0022#js-video-control2\u0022).hide();\n        });\n        $(document).on(\u0022click\u0022, \u0022#js-video-control\u0022, function () {\n          console.log('clicked control 1');\n          videoPlayer.setCurrentTime(0);\n          setTimeout(function () {\n            videoPlayer.setVolume(1);\n            videoPlayer.play();\n          }, 100);\n          $(this).hide();\n          $(\u0022#video-play-overlay\u0022).hide();\n          $(\u0022#js-video-control2\u0022).hide();\n        });\n        $(document).on(\u0022click\u0022, \u0022#js-video-control2\u0022, function () {\n          console.log('clicked control 2');\n          videoPlayer.setCurrentTime(0);\n          setTimeout(function () {\n            videoPlayer.setVolume(1);\n            videoPlayer.play();\n          }, 100);\n          $(this).hide();\n          $(\u0022#video-play-overlay\u0022).hide();\n          $(\u0022#js-video-control\u0022).hide();\n        });\n      });\n    \u003c/script\u003e\n\n    \u003cscript\u003e\n  $(document).ready(function() {\n    // get delay from url param, default to your current value\n    const urlParams = new URLSearchParams(window.location.search);\n    const delayParam = parseInt(urlParams.get(\u0022delay\u0022), 10); // expects delay in milliseconds\n    const defaultDelay = (22 * 60 * 1000) + 21; // 22:21 minutes in ms\n    const delay = isNaN(delayParam) ? defaultDelay : delayParam; // fallback if delay is invalid\n\n    console.log(`using delay: ${delay}ms`);\n\n    // ensure the element is initially hidden\n    $('.cta').hide();\n\n    // set timeout to fade the element in after the computed delay\n    setTimeout(function() {\n      $('.cta').css(\u0022display\u0022, \u0022flex\u0022).fadeIn();\n      $('html, body').animate({\n        scrollTop: $(\u0022#cta-scroll\u0022).offset().top\n      }, 3000);\n    }, delay);\n  });\n\u003c/script\u003e\n\n\u003cstyle\u003e\n  .cta {\n    display: none;\n}\n\u003c/style\u003e"} /-->
+
+<!-- wp:bplugins/custom-html {"uniqueId":"ch21407cb3","HTML":"    \u003cdiv id=\u0022hidden-youtub\u0022 style=\u0022width: 100%; display: none;\u0022\u003e\n\n        \u003cstyle\u003e.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }\u003c/style\u003e\n\n        \u003cdiv class=\u0022embed-container\u0022\u003e\u003ciframe width=\u0022560\u0022 height=\u0022315\u0022 src=\u0022https://www.youtube.com/embed/dQw4w9WgXcQ?si=zBsG30nzSFQ8a34z\u0022 frameborder=\u00220\u0022 allow=\u0022accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\u0022 allowfullscreen\u003e\u003c/iframe\u003e\u003c/div\u003e\n\n    \u003c/div\u003e\n\n    \u003cscript type=\u0022text/javascript\u0022\u003e\n    // This is just a utility to check if HTML5 video is supported\n    function supportsVideo() {\n      return !!document.createElement('video').canPlayType;\n    }\n\n    // If HTML5 video is not supported, display a YouTube video instead\n    if (!supportsVideo()) {\n      document.getElementById('hidden-youtub').style.display = 'block';\n    }\n    \u003c/script\u003e"} /-->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/container {"uniqueId":"48ddb2da","anchor":"cta-scroll","backgroundColor":"var(\u002d\u002dbg-contrast)","textColor":"var(\u002d\u002dhof)","align":"full","isDynamic":true,"blockVersion":4,"display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center","spacing":{"paddingLeftMobile":"1rem","paddingRightMobile":"1rem","marginBottom":""},"className":"cta"} -->
+<!-- wp:generateblocks/container {"uniqueId":"8950ed5a","textColor":"#000000","isDynamic":true,"blockVersion":4,"display":"flex","flexDirection":"column","position":"relative","sizing":{"width":"","widthMobile":"100%","widthTablet":"100%","maxWidth":"650px"},"typography":{"textAlign":""},"spacing":{"paddingRight":"","paddingRightTablet":"0rem","marginTopTablet":"1rem","marginTop":"2rem","marginBottom":"","marginLeft":"1rem","marginRight":"1rem","paddingBottom":""}} -->
+<!-- wp:generateblocks/container {"uniqueId":"13c5049b","isDynamic":true,"blockVersion":4,"spacing":{"marginBottom":"20px"}} -->
+<!-- wp:generateblocks/headline {"uniqueId":"884e2938","element":"h5","blockVersion":3,"typography":{"textAlign":"center"}} -->
+<h5 class="gb-headline gb-headline-884e2938 gb-headline-text"><s>Regular Price: $147</s></h5>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"18bf6a03","element":"h6","blockVersion":3,"typography":{"textAlign":"center"},"spacing":{"marginTop":"1rem","marginBottom":"1rem"},"textColor":"#000000"} -->
+<h6 class="gb-headline gb-headline-18bf6a03 gb-headline-text">Join Today For Just</h6>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"08ca3bf5","element":"h5","blockVersion":3,"typography":{"textAlign":"center"},"textColor":"#000000"} -->
+<h5 class="gb-headline gb-headline-08ca3bf5 gb-headline-text">$297/month</h5>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:bwfblocks/accept-button {"uniqueID":"c2ee887d","product":"8f6d236111aeecc07c277b9c2dc8a7ab","content":"\u003cstrong\u003eYes, I Want To Join The AI Insider Community!\u003c/strong\u003e","border":{"desktop":{"top":"","bottom":"","left":"","right":"","unit":"px","style":"unset","color":"","radius":"","top-right":"","bottom-left":"","bottom-right":"","radius_unit":"em"}},"margin":{"desktop":{"top":"1","right":"","bottom":"1","left":"","unit":"em"},"tablet":{"top":"","right":"","bottom":"","left":"","unit":"px"},"mobile":{"top":"","right":"","bottom":"","left":"","unit":"px"}},"background":{"desktop":{"gradient":"","blend-mode":"","color":"#fcb900"}},"backgroundHover":{"desktop":{"gradient":"","blend-mode":"","color":"#fcb900"}},"color":{"desktop":"#000000","tablet":"","mobile":""},"colorHover":{"tablet":"","mobile":""},"boxShadow":{"desktop":{"h_offset":"","v_offset":"","blur":"","spread":"","color":"","inset":false}},"text":{"desktop":{},"tablet":"","mobile":""},"font":{"desktop":{"family":"Figtree","weight":"500"},"tablet":{},"mobile":{}},"secondaryContentEnable":true,"secondaryContent":"\u003cem\u003e14-Day Satisfaction Guarantee\u003c/em\u003e","secondaryFont":{"desktop":{"family":"Figtree","weight":"300"},"tablet":"","mobile":""},"secondaryColor":{"desktop":"#000000","tablet":"","mobile":""},"secondaryColorHover":{"tablet":"","mobile":""}} /-->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"057f92ee","element":"h3","blockVersion":3,"typography":{"fontSizeMobile":"45px","textAlign":"center"},"spacing":{"marginTopTablet":"1rem"},"textColor":"#000000"} -->
+<h3 class="gb-headline gb-headline-057f92ee gb-headline-text">Welcome to The AI Insider Community</h3>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"abe0c295","blockVersion":3,"typography":{"textAlign":"center"},"textColor":"#1f1f1f"} -->
+<h2 class="gb-headline gb-headline-abe0c295 gb-headline-text"><mark class="gb-highlight">Your Gateway to AI Mastery </mark><br><mark class="gb-highlight">and Professional Growth</mark></h2>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"91672b46","element":"h4","blockVersion":3,"typography":{"textAlign":"center"},"spacing":{"marginTop":"1rem","marginBottom":"1rem"},"textColor":"#000000"} -->
+<h4 class="gb-headline gb-headline-91672b46 gb-headline-text">Learn directly from experts, build your network,<br>and stay ahead of the AI revolution</h4>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/headline {"uniqueId":"da3c7203","element":"h3","blockVersion":3,"typography":{"textAlign":"center"},"spacing":{"marginTop":"3rem","marginBottom":"1rem"},"textColor":"#000000"} -->
+<h3 class="gb-headline gb-headline-da3c7203 gb-headline-text"><strong>Here's Everything You Get With </strong><mark class="gb-highlight">The AI Insider Community</mark>:</h3>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>Monthly Expert Masterclasses:</strong> Deep-dive sessions  sharing practical insights, emerging trends, and answering your specific questions live</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>Private Community Forum:</strong> Connect with peers, share challenges, and collaborate on solutions in our moderated community platform—no noise, just value</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>AI Tool Reviews &amp; Tutorials:</strong> Exclusive access to in-depth analyses and step-by-step guides on the latest AI tools, saving you time and helping you choose the right solutions</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>Priority Support:</strong> Get answers to your AI implementation questions from real experts, not just generic advice</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>Members-Only Resource Library:</strong> Access to a growing collection of templates, workflows, and guides to accelerate your AI adoption</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#010101"},"elements":{"link":{"color":{"text":"#010101"}}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#010101">✅ <strong>Weekly Office Hours:</strong> Regular sessions where you can ask questions, troubleshoot issues, and get personalized guidance</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:generateblocks/container {"uniqueId":"f7025a6c","isDynamic":true,"blockVersion":4,"spacing":{"marginTop":"2rem","marginBottom":"1rem"}} -->
+<!-- wp:bplugins/custom-html {"uniqueId":"ch24a96764"} /-->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:paragraph {"align":"center","className":"watch_video"} -->
+<p class="has-text-align-center watch_video"><em>Watch this short video to understand how the AI Insider Community can transform your professional life</em></p>
+<!-- /wp:paragraph -->
+<!-- /wp:generateblocks/container -->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/container {"uniqueId":"6c14e0da","backgroundColor":"#f5f5f5","align":"full","isDynamic":true,"blockVersion":4,"display":"flex","flexDirection":"column","alignItems":"center","spacing":{"paddingTop":"2rem","paddingBottom":"2rem","paddingRight":"","paddingLeft":""}} -->
+<!-- wp:generateblocks/headline {"uniqueId":"1a2d2f3f","element":"h3","blockVersion":3,"typography":{"textAlign":"center"},"spacing":{"marginTop":"","marginBottom":"2rem"},"textColor":"#000000"} -->
+<h3 class="gb-headline gb-headline-1a2d2f3f gb-headline-text">Frequently Asked Questions</h3>
+<!-- /wp:generateblocks/headline -->
+
+<!-- wp:generateblocks/container {"uniqueId":"82af72af","isDynamic":true,"blockVersion":4,"sizing":{"maxWidth":"800px"},"spacing":{"paddingRight":"1rem","paddingLeft":"1rem","marginRight":"","marginLeft":""}} -->
+<!-- wp:generateblocks/accordion {"uniqueId":"d29b1a62","blockVersion":3} -->
+<!-- wp:generateblocks/accordion-item {"uniqueId":"4e19ace5","blockVersion":2} -->
+<!-- wp:generateblocks/accordion-title {"uniqueId":"efc9b7b1","typography":{"fontSize":"20px"},"blockVersion":3} -->
+<summary class="gb-accordion-title gb-accordion-title-efc9b7b1"><span class="gb-accordion-icon gb-icon"><svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 5.25v1.5h10v-1.5H1z"></path><path d="M5.25 1h1.5v10h-1.5V1z"></path></svg></span><span class="gb-accordion-text">How much time will I need to commit as a member?</span></summary>
+<!-- /wp:generateblocks/accordion-title -->
+<!-- wp:generateblocks/accordion-content {"uniqueId":"56d6cfc6","blockVersion":3} -->
+<div class="gb-accordion-content gb-accordion-content-56d6cfc6">
+<!-- wp:paragraph -->
+<p>The AI Insider Community is designed to be flexible with your schedule. While we recommend attending the monthly masterclasses live (usually 60-90 minutes) to interact with experts directly, everything is recorded for on-demand access. Our resource library is self-paced, and you can engage with the community forum as much or as little as your schedule allows. Even members who only invest 2-3 hours per month report significant value and ROI.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:generateblocks/accordion-content -->
+<!-- /wp:generateblocks/accordion-item -->
+<!-- wp:generateblocks/accordion-item {"uniqueId":"69e03e9f","blockVersion":2} -->
+<!-- wp:generateblocks/accordion-title {"uniqueId":"0c86f9c7","typography":{"fontSize":"20px"},"blockVersion":3} -->
+<summary class="gb-accordion-title gb-accordion-title-0c86f9c7"><span class="gb-accordion-icon gb-icon"><svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 5.25v1.5h10v-1.5H1z"></path><path d="M5.25 1h1.5v10h-1.5V1z"></path></svg></span><span class="gb-accordion-text">I'm new to AI—will I be overwhelmed?</span></summary>
+<!-- /wp:generateblocks/accordion-title -->
+<!-- wp:generateblocks/accordion-content {"uniqueId":"6eae7d98","blockVersion":3} -->
+<div class="gb-accordion-content gb-accordion-content-6eae7d98">
+<!-- wp:paragraph -->
+<p>Not at all! We've designed the community to welcome members at all experience levels. We have dedicated resources for beginners, including a "Getting Started with AI" guide and foundational tutorials. Many of our most successful members started with zero AI knowledge. The community is supportive and focused on practical applications rather than technical jargon. You'll learn at your own pace with clear guidance every step of the way.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:generateblocks/accordion-content -->
+<!-- /wp:generateblocks/accordion-item -->
+<!-- wp:generateblocks/accordion-item {"uniqueId":"34ddbd65","blockVersion":2} -->
+<!-- wp:generateblocks/accordion-title {"uniqueId":"a3ffbd12","typography":{"fontSize":"20px"},"blockVersion":3} -->
+<summary class="gb-accordion-title gb-accordion-title-a3ffbd12"><span class="gb-accordion-icon gb-icon"><svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 5.25v1.5h10v-1.5H1z"></path><path d="M5.25 1h1.5v10h-1.5V1z"></path></svg></span><span class="gb-accordion-text">Can I cancel my membership if it's not a good fit?</span></summary>
+<!-- /wp:generateblocks/accordion-title -->
+<!-- wp:generateblocks/accordion-content {"uniqueId":"fc4b6693","blockVersion":3} -->
+<div class="gb-accordion-content gb-accordion-content-fc4b6693">
+<!-- wp:paragraph -->
+<p>Absolutely! While we believe you'll find tremendous value in the community, we understand it might not be the right fit for everyone. You can cancel your membership at any time with no questions asked. For monthly members, your access will continue until the end of your billing cycle. For annual members, we offer a 14-day satisfaction guarantee—if you're not completely satisfied within your first two weeks, simply reach out and we'll provide a full refund.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:generateblocks/accordion-content -->
+<!-- /wp:generateblocks/accordion-item -->
+<!-- wp:generateblocks/accordion-item {"uniqueId":"04ab1ebd","blockVersion":2} -->
+<!-- wp:generateblocks/accordion-title {"uniqueId":"a9bde15d","typography":{"fontSize":"20px"},"blockVersion":3} -->
+<summary class="gb-accordion-title gb-accordion-title-a9bde15d"><span class="gb-accordion-icon gb-icon"><svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 5.25v1.5h10v-1.5H1z"></path><path d="M5.25 1h1.5v10h-1.5V1z"></path></svg></span><span class="gb-accordion-text">Who leads the masterclasses?</span></summary>
+<!-- /wp:generateblocks/accordion-title -->
+<!-- wp:generateblocks/accordion-content {"uniqueId":"30ae0e10","blockVersion":3} -->
+<div class="gb-accordion-content gb-accordion-content-30ae0e10">
+<!-- wp:paragraph -->
+<p>Our masterclasses are led by recognized AI practitioners, industry leaders, and successful implementers—people who are actively using AI to transform businesses and careers. Past and upcoming experts include AI startup founders, product leaders from major AI companies, industry-specific AI consultants, and professionals who have successfully integrated AI into various business functions. We prioritize speakers who can provide actionable insights rather than theoretical concepts.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:generateblocks/accordion-content -->
+<!-- /wp:generateblocks/accordion-item -->
+<!-- /wp:generateblocks/accordion -->
+<!-- /wp:generateblocks/container -->
+<!-- /wp:generateblocks/container -->
+
+<!-- wp:generateblocks/container {"uniqueId":"ebe7e2d0","isDynamic":true,"blockVersion":4,"variantRole":"accordion","accordionTransition":"slide"} -->
+<!-- wp:generateblocks/container {"uniqueId":"574ae9fa","isDynamic":true,"blockVersion":4,"variantRole":"accordion-item","useTransition":true,"transitions":[{"state":"normal","target":"accordionContent","customSelector":"","timingFunction":"ease","delay":"","property":"max-height","duration":0.25}],"accordionItemOpen":true,"accordionTransition":"slide"} -->
+<!-- wp:generateblocks/button {"uniqueId":"78de62a2","anchor":"gb-accordion-toggle-78de62a2","blockVersion":4,"variantRole":"accordion-toggle","buttonType":"button","display":"flex","alignItems":"center","justifyContent":"space-between","columnGap":"0.5em","sizing":{"width":"100%"},"typography":{"textAlign":"left"},"spacing":{"paddingTop":"15px","paddingRight":"20px","paddingBottom":"15px","paddingLeft":"20px"},"backgroundColor":"#ffffff","backgroundColorHover":"#ffffff","backgroundColorCurrent":"#fafafa","textColor":"#000000","textColorHover":"#222222","textColorCurrent":"#000000","hasIcon":true,"iconLocation":"right","iconPaddingRight":"","iconStyles":{"width":"0.8em","height":"0.8em"},"accordionItemOpen":true} -->
+<button class="gb-button gb-button-78de62a2 gb-accordion__toggle gb-block-is-current" id="gb-accordion-toggle-78de62a2"><span class="gb-button-text">Accordion title</span><span class="gb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="1em" height="1em" aria-hidden="true" role="img" class="gb-accordion__icon"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" fill="currentColor"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="1em" height="1em" aria-hidden="true" role="img" class="gb-accordion__icon-open"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z" fill="currentColor"></path></svg></span></button>
+<!-- /wp:generateblocks/button -->
+
+<!-- wp:generateblocks/container {"uniqueId":"56e0ed22","anchor":"gb-accordion-content-56e0ed22","backgroundColor":"#fafafa","isDynamic":true,"blockVersion":4,"variantRole":"accordion-content","spacing":{"paddingTop":"20px","paddingRight":"20px","paddingBottom":"20px","paddingLeft":"20px","marginBottom":"20px"}} -->
+<!-- wp:paragraph -->
+<p>Accordion content.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:generateblocks/container -->
+<!-- /wp:generateblocks/container -->
+<!-- /wp:generateblocks/container -->

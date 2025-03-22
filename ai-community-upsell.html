@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI Insider Community | Exclusive Offer</title>
+    <style>
+        :root {
+            --primary: #2a6fed;
+            --secondary: #ff6b00;
+            --accent: #00c9a7;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --highlight: rgba(255, 107, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+        
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .header {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 5px solid var(--secondary);
+        }
+        
+        .headline {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 2rem auto;
+            border: 3px solid var(--primary);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #666;
+        }
+        
+        .bullet-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .bullet-point {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .bullet-point:hover {
+            transform: translateY(-5px);
+        }
+        
+        .bullet-point h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .highlight-box {
+            background-color: var(--highlight);
+            border-left: 5px solid var(--secondary);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+        
+        .testimonial {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .pricing-box {
+            max-width: 800px;
+            margin: 3rem auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .pricing-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .pricing-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-content {
+            padding: 2rem;
+        }
+        
+        .price {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .price-regular {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.5rem;
+        }
+        
+        .price-discount {
+            font-size: 3rem;
+            color: var(--secondary);
+            font-weight: 800;
+        }
+        
+        .price-period {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .price-daily {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #666;
+        }
+        
+        .feature-list {
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-icon {
+            color: var(--success);
+            margin-right: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .cta-button {
+            display: block;
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 2rem auto;
+            max-width: 500px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #e05c00;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+        }
+        
+        .guarantee {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .guarantee-img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .countdown {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+        
+        .countdown-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .countdown-item {
+            background-color: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 5px;
+            min-width: 80px;
+        }
+        
+        .countdown-value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .countdown-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-links {
+            margin-top: 1rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 2rem;
+            }
+            
+            .subheadline {
+                font-size: 1.25rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .bullet-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-discount {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="headline">You're In! Now It's Time To Secure Your Future In The AI Revolution</h1>
+            <p class="subheadline">Join Our Exclusive AI Insider Community And Stay Ahead Of The Lightning-Fast Changes Happening In Technology</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="video-container">
+                    <!-- Replace with actual video embed code -->
+                    <img src="https://via.placeholder.com/800x450?text=AI+Insider+Community+Video" alt="AI Insider Community Video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                </div>
+                
+                <div class="highlight-box">
+                    <p>Congratulations on joining the 7 Day AI Ad Catalyst! You've already taken a significant step toward the future. But this is just the beginning of what's possible when you harness the power of AI correctly.</p>
+                </div>
+                
+                <h2 class="section-title">The World Is Changing At An Unprecedented Rate</h2>
+                <p>What you're going to learn in the 7 Day AI Ad Catalyst will give you a massive advantage - but the pace of AI innovation is accelerating exponentially:</p>
+                
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>New AI breakthroughs that used to happen every few <strong>years</strong> are now happening every few <strong>days</strong></div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>Just days ago, a Chinese lab released DeepSeek - making enterprise-level AI accessible to everyone</div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>These technologies will completely transform every aspect of business operations</div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <div>Most business owners have <strong>no idea</strong> what's coming or how to adapt</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Introducing The AI Insider Community</h2>
+                <p class="section-subtitle">Your Unfair Advantage In The Age Of Artificial Intelligence</p>
+                
+                <div class="bullet-points">
+                    <div class="bullet-point">
+                        <h3>Weekly AI Innovation Updates</h3>
+                        <p>Get immediate breakdowns of new AI technologies and how to implement them in your business before your competition even knows they exist.</p>
+                    </div>
+                    
+                    <div class="bullet-point">
+                        <h3>Live Implementation Sessions</h3>
+                        <p>Join Ryan for weekly live calls where he demonstrates how to implement the latest AI tools for maximum impact in your specific business.</p>
+                    </div>
+                    
+                    <div class="bullet-point">
+                        <h3>Exclusive AI Workshops</h3>
+                        <p>Access new training modules as they're developed, covering everything from customer service automation to content creation to business intelligence.</p>
+                    </div>
+                    
+                    <div class="bullet-point">
+                        <h3>Direct Access To Ryan</h3>
+                        <p>Get your specific questions answered and receive personalized guidance during weekly office hours with Ryan.</p>
+                    </div>
+                    
+                    <div class="bullet-point">
+                        <h3>Private Community</h3>
+                        <p>Connect with other forward-thinking business owners who are implementing AI in revolutionary ways.</p>
+                    </div>
+                    
+                    <div class="bullet-point">
+                        <h3>First-To-Know Advantage</h3>
+                        <p>Be the first to learn about paradigm-shifting AI developments with immediate implementation guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: var(--highlight);">
+            <div class="container">
+                <h2 class="section-title">Why This Matters Now More Than Ever</h2>
+                
+                <p>We are witnessing the beginning of what experts call "The Singularity" - the point where technological advancement becomes nearly vertical on the growth curve. Consider this:</p>
+                
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">⚠️</span>
+                        <div>Most businesses using outdated methods will be completely <strong>obsolete</strong> within 1-3 years</div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">⚠️</span>
+                        <div>AI is already eliminating entire job categories and creating new ones at an unprecedented rate</div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">⚠️</span>
+                        <div>The gap between AI-empowered businesses and those falling behind is growing exponentially</div>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">⚠️</span>
+                        <div>Without expert guidance, most business owners will be overwhelmed trying to keep up</div>
+                    </li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p>You've already shown you're forward-thinking by investing in the 7 Day AI Ad Catalyst. This community is where you'll continue to stay ahead of the curve and secure your business's future in this rapidly changing landscape.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Limited-Time Founding Member Opportunity</h2>
+                
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">AI Insider Community</h3>
+                        <p>Founding Member Access</p>
+                    </div>
+                    
+                    <div class="pricing-content">
+                        <div class="price">
+                            <div class="price-regular">Regular Price: $197/month</div>
+                            <div class="price-discount">$97<span class="price-period">/month</span></div>
+                            <div class="price-daily">Just $3.23 per day</div>
+                        </div>
+                        
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Weekly AI innovation updates and implementation guidance</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Live weekly implementation sessions</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Exclusive access to all new AI workshops ($499 value each)</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Direct access to Ryan during weekly office hours</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Private community of forward-thinking business owners</div>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <div>Cancel anytime - no contracts or commitments</div>
+                            </li>
+                        </ul>
+                        
+                        <a href="#join-now" class="cta-button">YES! I WANT FOUNDING MEMBER ACCESS</a>
+                        
+                        <div class="countdown">
+                            <h4 class="countdown-title">This Founding Member Offer Expires In:</h4>
+                            <div class="countdown-timer">
+                                <div class="countdown-item">
+                                    <div class="countdown-value">00</div>
+                                    <div class="countdown-label">Days</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-value">00</div>
+                                    <div class="countdown-label">Hours</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-value">15</div>
+                                    <div class="countdown-label">Minutes</div>
+                                </div>
+                                <div class="countdown-item">
+                                    <div class="countdown-value">27</div>
+                                    <div class="countdown-label">Seconds</div>
+                                </div>
+                            </div>
+                            <p>After that, the price increases to $197/month</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="guarantee">
+                    <img src="https://via.placeholder.com/150x150?text=Guarantee" alt="30-Day Satisfaction Guarantee" class="guarantee-img">
+                    <h4>100% Risk-Free Guarantee</h4>
+                    <p>If you're not completely satisfied with your membership, simply cancel anytime. No questions asked. You'll retain access until the end of your billing period.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-question">How is this different from the 7 Day AI Ad Catalyst?</div>
+                        <div class="faq-answer">The 7 Day AI Ad Catalyst focuses specifically on creating winning ad creatives with AI. The AI Insider Community expands to all aspects of business where AI can create competitive advantages - from operations to customer service to product development and beyond.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Do I need to be tech-savvy to benefit from this community?</div>
+                        <div class="faq-answer">Not at all. Ryan breaks down complex technologies into simple, actionable steps that anyone can implement, regardless of technical background.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">How much time will I need to commit each week?</div>
+                        <div class="faq-answer">You can participate as much or as little as you want. The weekly implementation sessions are approximately 60-90 minutes, but all recordings and resources are available if you can't attend live.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What if I'm already using AI in my business?</div>
+                        <div class="faq-answer">Perfect! You'll be able to take what you're already doing and significantly enhance it with cutting-edge innovations and strategies that most businesses won't know about for months or years.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I cancel if it's not for me?</div>
+                        <div class="faq-answer">Absolutely. There are no contracts or commitments. You can cancel anytime with just a few clicks in your account settings or by contacting our support team.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: var(--highlight);">
+            <div class="container">
+                <h2 class="section-title">Don't Get Left Behind In The AI Revolution</h2>
+                
+                <p style="text-align: center; margin-bottom: 2rem;">The world is changing faster than ever before. Those who adapt will thrive. Those who don't will struggle to remain relevant.</p>
+                
+                <a href="#join-now" class="cta-button">JOIN THE AI INSIDER COMMUNITY NOW</a>
+                
+                <p style="text-align: center; font-size: 0.875rem; color: #666; margin-top: 1rem;">Your Founding Member discount will be locked in for as long as you remain a member</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AI Insider Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple countdown timer
+        const countdownDate = new Date();
+        countdownDate.setHours(countdownDate.getHours() + 24); // 24 hours from now
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.querySelector('.countdown-timer .countdown-item:nth-child(1) .countdown-value').innerHTML = days.toString().padStart(2, '0');
+            document.querySelector('.countdown-timer .countdown-item:nth-child(2) .countdown-value').innerHTML = hours.toString().padStart(2, '0');
+            document.querySelector('.countdown-timer .countdown-item:nth-child(3) .countdown-value').innerHTML = minutes.toString().padStart(2, '0');
+            document.querySelector('.countdown-timer .countdown-item:nth-child(4) .countdown-value').innerHTML = seconds.toString().padStart(2, '0');
+            
+            if (distance < 0) {
+                clearInterval(x);
+                document.querySelector('.countdown').innerHTML = "Offer expired!";
+            }
+        }
+        
+        updateCountdown();
+        const x = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html> 
