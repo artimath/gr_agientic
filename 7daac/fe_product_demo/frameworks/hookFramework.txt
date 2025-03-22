@@ -1,0 +1,53 @@
+Hook Writing Framework for Axwell Wallet
+
+Core Hook Elements:
+1. Pattern Interruption
+   - Unexpected statement/question
+   - Contrarian view
+   - Shocking statistic
+   - Direct challenge
+
+2. Emotional Triggers
+   - Pain points (frustration, annoyance)
+   - Aspirations (success, status)
+   - Fear (loss, security)
+   - Curiosity (innovation, exclusivity)
+
+3. Hook Structures
+   - Question → Challenge
+   - Problem → Solution
+   - Contrast → Resolution
+   - Statement → Intrigue
+
+4. Power Words
+   - Emotional: Sick of, Fed up, Tired of
+   - Action: Meet, Discover, Introducing
+   - Time: Finally, Never again, Forever
+   - Status: Premium, Professional, Executive
+
+5. Hook Formulas
+   A) Pain + Promise
+      [Pain Point] + [Immediate Solution]
+   
+   B) Question + Challenge
+      [Provocative Question] + [Status Quo Challenge]
+   
+   C) Contrast + Resolution
+      [Old Way] vs [New Solution]
+   
+   D) Statement + Intrigue
+      [Bold Statement] + [Curiosity Gap]
+
+6. Success Criteria
+   - Stops the scroll
+   - Creates immediate resonance
+   - Promises clear value
+   - Sets up the solution
+   - Leads naturally to features
+   
+7. Optimization Elements
+   - Clear target audience reference
+   - Specific pain point/desire
+   - Credibility indicator
+   - Unique value proposition
+   - Transition to proof elements 

@@ -1,0 +1,47 @@
+Ad Pattern Analysis for Axwell Wallet Ads
+
+Common Structural Elements:
+1. Header Format
+- All ads start with "Axwell" repeated twice
+- All marked as "Sponsored"
+
+2. Value Proposition Patterns:
+- All ads lead with a strong hook:
+  * Ad #1: Questions pain point ("Fed up with wallets that fall apart?")
+  * Ad #2: Direct statement about outdated product
+  * Ad #3: Creates urgency with "Limited Edition Alert"
+
+3. Feature Presentation:
+- All ads use checkmark/emoji bullet points
+- Consistent use of 3-4 key benefits
+- Common themes: durability, RFID blocking, card capacity
+
+4. Promotional Elements:
+- All mention discounts/sales:
+  * Ad #1: "40% off sitewide"
+  * Ad #2: "Up to 50% OFF"
+  * Ad #3: "New Year Sale"
+
+5. Call-to-Action Format:
+- All end with "AXWELLWALLET.COM"
+- Include action-oriented button text
+- Use emoji arrows (👉) in CTAs
+
+6. Urgency Triggers:
+- Limited time offers
+- Exclusive deals
+- New Year themed (Ads #2 and #3)
+
+7. Social Proof:
+- Ad #1 uniquely includes customer ratings (4.8/5)
+- Mentions "100,000+ Customers"
+
+8. Warranty/Guarantee:
+- Consistent mention of lifetime warranty/durability
+- Focus on long-term value
+
+Key Marketing Angles:
+- Premium positioning
+- Durability as main selling point
+- Time-sensitive offers
+- Modern/tech-savvy features (RFID) 
